@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="todo.css">
+    <script type="text/javascript" src="todo.js"></script>
+  </head>
+  <body>
+    <h1>Todo List</h1>
+    <form onsubmit="addTodo(this.elements['todo-item'].value); this.elements['todo-item'].value = ''; return false;">
+      <input type="text" name="todo-item">
+      <input type="submit" value="Add">
+    </form>
+    <ul id="todo-list">
+    </ul>
+  </body>
+</html>
